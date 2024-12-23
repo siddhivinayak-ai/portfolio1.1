@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #111;
+  color: #fff;
+  padding: 10px;
+}
+
+.loader-container {
+  text-align: center;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.logo {
+  width: 10rem;
+  height: auto;
+  margin-bottom: 2rem;
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  color: #bbb;
+}
+
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .logo {
+      width: 7rem;
+  }
+
+  .title {
+      font-size: 1.75rem;
+  }
+
+  .subtitle {
+      font-size: 1rem;
+  }
+}

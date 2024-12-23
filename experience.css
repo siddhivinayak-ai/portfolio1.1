@@ -1,0 +1,233 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #1a1a2e;
+  color: #e0e0e0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Top Navigation */
+.top-nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #0f0f1c;
+  padding: 10px 20px;
+  text-align: center;
+  color: #ffffff;
+  font-size: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  z-index: 100;
+}
+
+/* Experience Section */
+main {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  padding: 20px;
+}
+
+.experience-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.experience-card {
+  display: flex;
+  flex-direction: column;
+  background: #232344;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
+}
+
+.company-logo {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.experience-details {
+  text-align: left;
+}
+
+.title {
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.company {
+  font-size: 16px;
+  color: #a0a0b2;
+}
+
+.location-duration {
+  font-size: 14px;
+  color: #7d7d9c;
+  margin-bottom: 10px;
+}
+
+.description {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.skills {
+  font-size: 14px;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.certificate-preview {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 5px;
+  object-fit: cover;
+  margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Bottom Navigation */
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  background-color: #0f0f1c;
+  padding: 10px 0;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.5);
+  z-index: 100;
+}
+
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #a0a0b2;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.nav-item i {
+  font-size: 20px;
+  margin-bottom: 5px;
+ 
+}
+
+.nav-item .active{
+  color:rgb(255, 255, 255);
+  
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .experience-card {
+    flex-direction: column;
+  }
+
+  .certificate-preview {
+    width: 100%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Modal Styles */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed;
+  z-index: 200; /* Above other content */
+  left: 0;
+  top: 10%;
+  width: 100%;
+  height: 100%;
+  overflow: auto; /* Enable scroll for larger images */
+  background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+}
+
+.modal-content {
+  display: block;
+  margin: auto;
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+  animation: fadeIn 0.3s;
+}
+
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: #00aeff;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 201;
+}
+
+.close-btn:hover {
+  color: #ff6666;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
